@@ -1,0 +1,7 @@
+{
+  "name": "Smart_Programming_COT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
