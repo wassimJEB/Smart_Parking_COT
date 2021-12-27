@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7e1c3abe-27dc-4144-baf1-c98b65acc598" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/identity/authRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/identity/authRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/identity/controllers/Identity.provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/identity/controllers/Identity.provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/identity/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/identity/models/userModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/login/login.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/login/login.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/services/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/services/http.service.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Smart_Back/identity/authRoute.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/app/services/auth.service.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/app/services/http.service.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_Back/server.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/environments/environment.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_Back/identity/models/userModel.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/login/login.page.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_Back/identity/controllers/Identity.provider.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="21S9FaM9Ly429Cb2h47VXdRLu17" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\21622\Project_COT\Smart_Back\identity" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e1c3abe-27dc-4144-baf1-c98b65acc598" name="Changes" comment="" />
+      <created>1637923518987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637923518987</updated>
+      <workItem from="1637923520279" duration="24823000" />
+      <workItem from="1638205794568" duration="9161000" />
+      <workItem from="1638267754748" duration="9064000" />
+      <workItem from="1638780304032" duration="2964000" />
+      <workItem from="1638784183351" duration="25199000" />
+      <workItem from="1638872463703" duration="3505000" />
+      <workItem from="1639387290088" duration="4988000" />
+      <workItem from="1639473416186" duration="4216000" />
+      <workItem from="1640099344913" duration="3587000" />
+      <workItem from="1640251219903" duration="111000" />
+      <workItem from="1640251339234" duration="16165000" />
+      <workItem from="1640349729298" duration="2704000" />
+      <workItem from="1640599659578" duration="9800000" />
+      <workItem from="1640611483559" duration="1914000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

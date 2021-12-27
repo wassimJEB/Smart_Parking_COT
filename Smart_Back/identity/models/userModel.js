@@ -20,12 +20,15 @@ const UserSchema = new mongoose.Schema({
 
     permissions: { type: Number, default: 0, min: 0, max: 2147483647 },
     role:{type:String, enum:["admin","surfer","member"]},
-    location:String,
     //loginAttempts: { type: Number, required: true, default: 0 },
     //lockUntil: { type: Number , default: 0}
-    created_at:{type:Date, default:Date.Now},
-    updated_at:{type:Date, default:Date.Now}
+    created_at:{type:Date, default:Date.Now}
 }, {timestamps: true});
+
+UserSchema.statics.createIdentity = (infos)=> {
+    const user = new mongoose.model("User", UserSchema)(infos);
+    return user.save();
+};
 
 //---------------- Create Some other virtual attr
 UserSchema.virtual('fullName')
@@ -39,6 +42,8 @@ UserSchema.virtual('isLocked').get(function() {
     // check for a future lockUntil timestamp
     return !!(this.lockUntil && this.lockUntil > Date.now());
 });
+
+
 
 
 
@@ -116,6 +121,10 @@ const reasons = UserSchema.statics.failedLogin = {
     NOT_FOUND: 0,
     PASSWORD_INCORRECT: 1,
     MAX_ATTEMPTS: 2
+};
+
+UserSchema.statics.findByUsername = (username)=> {
+    return mongoose.model("User", UserSchema).find({username : username});
 };
 
 

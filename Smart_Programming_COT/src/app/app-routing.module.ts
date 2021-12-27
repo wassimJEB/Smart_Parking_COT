@@ -10,10 +10,7 @@ const routes: Routes = [
 
 
   },
-  {
-    path: 'tabs',
-    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
-  },
+
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
@@ -24,9 +21,8 @@ const routes: Routes = [
   },
   {
     path: 'settings',
-    //loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
-    redirectTo: "login",
-    pathMatch: "full",
+    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+
   },
   {
     path: 'nfc-reader',

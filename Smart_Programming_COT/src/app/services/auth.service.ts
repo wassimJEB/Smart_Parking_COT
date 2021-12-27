@@ -54,35 +54,38 @@ export class AuthService {
 
 
   register(postData: any): Observable<any> {
-    console.log('Send Data correctly');
-    console.log(postData);
+    //console.log('Send Data correctly');
+    //console.log(postData);
     return this.httpService.postMeth('register', postData);
   }
-  /*login(postData: any): Observable<any> {
+  login(postData: any): Observable<any> {
+    //console.log('Send Data correctly');
     return this.httpService.postMeth('login', postData);
   }
-  logout() {
-    //this.storageService.clear();
-    //this.storageService.removeStorageItem('userData').then(res => {
-      //this.router.navigate(['/login']);});
- }*/
-  login(loginData: any): Observable<any> {
+
+  preSignIn(clientId : any, codeChallenge : any): Observable<any> {
+    let data = {
+      clientId: clientId,
+      codeChallenge: codeChallenge
+    };
+    return this.httpService.postMeth('users/authorize', data);
+  }
+  postSignIn(authorizationCode : any, codeVerifier : any, username : any): Observable<any> {
+    let data = {
+      authorizationCode: authorizationCode,
+      codeVerifier: codeVerifier,
+      username : username
+    };
+
+    return this.httpService.postMeth('users/oauth/token', data);
+  }
+
+  logout(): void {
     this.tokenService.removeToken();
     this.tokenService.removeRefreshToken();
-    const body = new HttpParams()
-      .set('username', loginData.username)
-      .set('password', loginData.password)
-      .set('grant_type', 'password');
-
-    return this.http.post<any>(API_URL + 'login', body, HTTP_OPTIONS)
-      .pipe(
-        tap(res => {
-          this.tokenService.saveToken(res.access_token);
-          this.tokenService.saveRefreshToken(res.refresh_token);
-        }),
-        catchError(AuthService.handleError)
-      );
   }
+
+
 
   refreshToken(refreshData: any): Observable<any> {
     this.tokenService.removeToken();
@@ -100,10 +103,24 @@ export class AuthService {
       );
   }
 
-  logout(): void {
+  /*  login(loginData: any): Observable<any> {
     this.tokenService.removeToken();
     this.tokenService.removeRefreshToken();
-  }
+    const body = new HttpParams()
+      .set('username', loginData.username)
+      .set('password', loginData.password)
+      .set('grant_type', 'password');
+
+    return this.http.post<any>(API_URL + 'login', body, HTTP_OPTIONS)
+      .pipe(
+        tap(res => {
+          this.tokenService.saveToken(res.access_token);
+          this.tokenService.saveRefreshToken(res.refresh_token);
+        }),
+        catchError(AuthService.handleError)
+      );
+  }*/
+
   secured(): Observable<any> {
     return this.http.get<any>(API_URL + 'secret')
       .pipe(catchError(AuthService.handleError));

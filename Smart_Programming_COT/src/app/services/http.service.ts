@@ -19,5 +19,11 @@ const url = environment.apiUrl + serviceName;
 
 return this.http.post(url,JSON.stringify(data), options);
 }
+getMeth(serviceName: string){
+  const headers = new HttpHeaders();
+  const options = { headers: headers, withCredentials: false };
+  const url = environment.apiUrl + serviceName;
+  return this.http.get(url, options)
+  }
 }
 

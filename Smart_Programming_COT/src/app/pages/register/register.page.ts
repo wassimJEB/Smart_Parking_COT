@@ -15,7 +15,8 @@ export class RegisterPage implements OnInit {
     surname :'',
     email: '',
     username: '',
-    password: ''
+    password: '',
+    role:''
     };
   constructor(private authService: AuthService,
     private toastService: ToastService,
@@ -25,9 +26,13 @@ export class RegisterPage implements OnInit {
   }
   registerAction() {
      //console.log(this.postData);
+    const Result = document.getElementById('res');
      this.authService.register(this.postData).subscribe(
        res=> {
-         console.log('Created mel front ');
+         //console.log('Created mel front ');
+
+
+
          console.log(res.postData);
          this.router.navigate(['Login'])
 
@@ -36,26 +41,5 @@ export class RegisterPage implements OnInit {
      );
 
   }
-      /*
-    this.authService.signup(this.postData).subscribe(
-    (res: any) => {
-    if (res.userData) {
-    // Storing the User data.
-    this.storageService
-    .store(this.AUTH, res.userData)
-    .then(res => {
-    this.router.navigate(['settings']);
-    });
-    } else {
-    this.toastService.presentToast(
-    'Data alreay exists, please enter new details.'
-    );
-    }
-    },
-    (error: any) => {
-    this.toastService.presentToast('Network Issue.');
-    }
-    );
 
-    }*/
 }
