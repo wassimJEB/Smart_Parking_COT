@@ -4,6 +4,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors')
+const fs =require('fs');
+const helmet = require('helmet');
+const mqtt = require('mqtt');
 let bodyParser  = require('body-parser');
 
 //Fichier Routes
@@ -20,6 +23,7 @@ app.set('view engine', 'ejs');
 
 
 //Middleware
+app.use(helmet())
 app.use(express.json({limit:'5mb',extended:'true'}));
 
 app.use(cors());

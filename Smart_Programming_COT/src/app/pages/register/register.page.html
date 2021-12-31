@@ -34,8 +34,17 @@
   <ion-input autocomplete="off" name="password" type="password" [(ngModel)]="postData.password"></ion-input>
   </ion-item>
     <ion-item>
-      <ion-label position="stacked">ROLE</ion-label>
+      <ion-label position="stacked">role</ion-label>
       <ion-input autocomplete="off" name="role" type="text" [(ngModel)]="postData.role"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Role</ion-label>
+      <ion-select interface="popover" value="role" >
+        <ion-select-option value="admin"  >admin</ion-select-option>
+        <ion-select-option value="surfer">surfer</ion-select-option>
+        <ion-select-option value="member">member</ion-select-option>
+      </ion-select>
     </ion-item>
 
   <ion-item lines='none'>

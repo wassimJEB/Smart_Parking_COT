@@ -25,7 +25,7 @@ export class RegisterPage implements OnInit {
   ngOnInit() {
   }
   registerAction() {
-     //console.log(this.postData);
+     console.log(this.postData.role);
     const Result = document.getElementById('res');
      this.authService.register(this.postData).subscribe(
        res=> {

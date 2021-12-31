@@ -1,5 +1,7 @@
 export const environment = {
   production: true,
   type:'prod',
-  apiUrl: 'https://api.thewallscript.com/restful/'
+  apiUrl: 'https://api.wassimjeb.me/'
   };
+
+

@@ -2,20 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e1c3abe-27dc-4144-baf1-c98b65acc598" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Back/identity/authRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/identity/authRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Back/identity/controllers/Identity.provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/identity/controllers/Identity.provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Back/identity/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/identity/models/userModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Back/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Back/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/assets/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/bin/www" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/config/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/identity/authRoute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/identity/controllers/Identity.provider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/identity/models/userModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/main/connection.db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/public/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/views/error.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Back/views/index.ejs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/nfc-reader/nfc-reader.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/nfc-reader/nfc-reader.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/nfc-reader/nfc-reader.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/nfc-reader/nfc-reader.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/login/login.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/login/login.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/services/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/services/http.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +51,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Smart_Back/identity/authRoute.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/app/services/auth.service.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/app/services/http.service.ts" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Smart_Back/server.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/environments/environment.ts" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Smart_Back/identity/models/userModel.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/login/login.page.ts" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Smart_Back/identity/controllers/Identity.provider.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21S9FaM9Ly429Cb2h47VXdRLu17" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -88,11 +100,25 @@
       <workItem from="1640251339234" duration="16165000" />
       <workItem from="1640349729298" duration="2704000" />
       <workItem from="1640599659578" duration="9800000" />
-      <workItem from="1640611483559" duration="1914000" />
+      <workItem from="1640611483559" duration="7247000" />
+      <workItem from="1640685188019" duration="9962000" />
+      <workItem from="1640866084438" duration="1605000" />
+      <workItem from="1640892030899" duration="5658000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/map/map.page.ts</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
