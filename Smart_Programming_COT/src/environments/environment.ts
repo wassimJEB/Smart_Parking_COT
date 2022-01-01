@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   type:'default',
-  apiUrl: 'http://localhost:80/'
+  apiUrl: 'https://api.wassimjeb.me/'
   };
 
 /*

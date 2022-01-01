@@ -6,7 +6,6 @@ const logger = require('morgan');
 const cors = require('cors')
 const fs =require('fs');
 const helmet = require('helmet');
-const mqtt = require('mqtt');
 let bodyParser  = require('body-parser');
 
 //Fichier Routes

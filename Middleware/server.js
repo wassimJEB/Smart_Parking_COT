@@ -7,7 +7,7 @@ const http = require('http');
 
 
 const app = require('./app.js');
-
+const mqtt = require('./mqtt/mqttClient')
 //Open http listener
 http.createServer(app).listen(80, () => {
   console.log('HTTP Server running on port 80');

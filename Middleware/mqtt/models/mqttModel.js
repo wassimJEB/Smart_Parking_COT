@@ -1,17 +1,14 @@
 const mongoose = require("mongoose");
 
 const mqttSchema = new mongoose.Schema({
-  datetime: {
-    type: String,
-    default: () => moment().format("YYYY-MM-DD HH:mm:ss"),
-  },
+  datetime: String,
   topic: String,
   payload: String,
 });
 
-mqttSchema.statics.createmqtt = (infos) => {
+mqttSchema.statics.createmqtt = async (infos) => {
   const mqtt = new mongoose.model("MqttData", mqttSchema)(infos);
-  return mqtt.save();
+  return await mqtt.save();
 };
 
 module.exports = mongoose.model("MqttData", mqttSchema);
