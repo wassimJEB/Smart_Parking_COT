@@ -5,8 +5,8 @@ exports.createMqtt=async(topic,message,dateTime)=> {
     //-------Creation --------
   let data={
     topic:topic,
-    message:message,
-    dateTime:dateTime
+    payload:message,
+    datetime:dateTime
   }
   try{
     const saved = await MqttData.createmqtt(data)
