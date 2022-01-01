@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e1c3abe-27dc-4144-baf1-c98b65acc598" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Middleware/mqtt/mqttClient.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Middleware/main/connection.db.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/main/connection.db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/mqtt/controllers/mqttController" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/mqtt/controllers/mqttController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/mqtt/models/mqttModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/mqtt/models/mqttModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\21622\Project_COT\Middleware\mqtt" />
       <recent name="C:\Users\21622\Project_COT\Smart_Back\identity" />
     </key>
   </component>
@@ -82,7 +76,7 @@
       <workItem from="1640611483559" duration="7247000" />
       <workItem from="1640685188019" duration="9962000" />
       <workItem from="1640866084438" duration="1605000" />
-      <workItem from="1640892030899" duration="9810000" />
+      <workItem from="1640892030899" duration="11046000" />
     </task>
     <servers />
   </component>
