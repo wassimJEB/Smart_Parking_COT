@@ -3,11 +3,11 @@ const HttpStatus = require('http-status-codes');
 const bcrypt = require('bcrypt');
 const User = require('../models/userModel')
 const argon2 = require('argon2');
-//const uuidv4 = require('uuidv4');
+
 //const validityTime = require('../config.js')().validityTime;
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto')
-//const randomstring = require("randomstring");
+
 const randomBytes = require('randombytes');
 const mongoose = require('mongoose'),
     Schema = mongoose.Schema
@@ -56,13 +56,22 @@ exports.createUser=async(req,res)=> {
 
 
 //---------SignIN------------
+let challenges = {};
+let codes = {};
+let identities = {}
+function printPKCEData() {
+    console.log('challenges: ' + JSON.stringify(challenges, null, 2));
+    console.log('codes: ' + JSON.stringify(codes, null, 2));
+    console.log('identities: ' + JSON.stringify(identities, null, 2));
+}
 
 exports.PreSignIn = async(req, res , next) => {
     //output : SignInId
     const requete=JSON.parse(Object.keys(req.body)[0]);
     clientId = requete.clientId;
     codeChallenge = requete.codeChallenge;
-    SignInId = randomBytes(32).toString('hex');
+    SignInId = clientId + "#" + uuidv4().toString();
+    challenges[codechallenge] = SignInId;
 
     data = {
         SignInId:SignInId,
@@ -70,6 +79,7 @@ exports.PreSignIn = async(req, res , next) => {
         codeChallenge:codeChallenge
     }
     //console.log(data)
+    privateData.push(SignInId);
     return res.status(200).send(data);
 }
 

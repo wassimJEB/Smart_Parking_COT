@@ -1,5 +1,5 @@
 module.exports={
-    urlBd:'mongodb://localhost/ProjectCot',
+    urlBd:'mongodb+srv://wassjb:abcd1234$@projetcot.dbmtd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     permissionLevels : { // on fait des puissaces de deux et donc on peut utiliser les (ou bit à bit) et (et bit à bit )
         // ces fonctions elementaires sont tres peu couteurses
         Master: 8,

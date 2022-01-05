@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from './../../services/auth.service';
 import { StorageService } from './../../services/storage.service';
-import { ToastService } from './../../services/toast.service';
+import  {ToastService}  from '../../services/toast.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
@@ -26,18 +26,19 @@ export class RegisterPage implements OnInit {
   }
   registerAction() {
      console.log(this.postData.role);
+
     const Result = document.getElementById('res');
-     this.authService.register(this.postData).subscribe(
-       res=> {
-         //console.log('Created mel front ');
-
-
-
+     this.authService.register(this.postData).subscribe(async res=> {
          console.log(res.postData);
-         this.router.navigate(['Login'])
+         await this.toastService.presentToast('Account created successfully!')
+         this.router.navigate(['/login']);
 
-         },
-       err=>console.log(err)
+
+         }, async err=>{
+       console.log(err);
+       await this.toastService.presentToast('There was a problem while creating the account!')
+
+       }
      );
 
   }

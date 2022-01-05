@@ -68,7 +68,7 @@ export class LoginPage implements OnInit {
                   // Storing the User data.
                   //this.storageService.store(AuthConstants.AUTH, res.token);
                   console.log('Jawna behy')
-                  this.router.navigate(['home']);
+                  this.router.navigate(['/home']);
                 }
               },
               (error: any) => {

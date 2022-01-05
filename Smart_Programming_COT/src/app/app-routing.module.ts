@@ -38,6 +38,14 @@ const routes: Routes = [
   {
     path: 'tes',
     loadChildren: () => import('./pages/tes/tes.module').then( m => m.TesPageModule)
+  },
+  {
+    path: 'sensor-details',
+    loadChildren: () => import('./pages/sensor-details/sensor-details.module').then( m => m.SensorDetailsPageModule)
+  },
+  {
+    path: 'car-list',
+    loadChildren: () => import('./pages/car-list/car-list.module').then( m => m.CarListPageModule)
   }
 
 ];

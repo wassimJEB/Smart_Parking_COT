@@ -1,5 +1,7 @@
 const mqtt = require('mqtt')
 const mqttController = require('./controllers/mqttController');
+
+
 const client = mqtt.connect('mqtt://mqtt.wassimjeb.me', {
     username: 'mqttCot',
     password: 'abcd1234$',

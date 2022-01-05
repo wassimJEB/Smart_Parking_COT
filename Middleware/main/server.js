@@ -1,4 +1,4 @@
-let express = require("express");
+
 let mongoose = require('mongoose')
 let bodyParser  = require('body-parser');
 const https = require('https');
@@ -7,7 +7,7 @@ const fs =require('fs');
 
 
 const app = require('./app.js');
-const mqtt = require('./mqtt/mqttClient');
+const mqtt = require('../mqtt/mqttClient');
 
 //--------Https----------
 
@@ -22,11 +22,4 @@ https.createServer(options,app).listen(443, () => {
   console.log('HTTPS Server running on port 443');
 });
 
-/*
-let backendPort = 8084;
 
-app.listen(backendPort, () => {
-  console.log("Express server listening on port " + backendPort);
-});
-
-*/

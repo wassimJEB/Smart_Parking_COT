@@ -6,10 +6,90 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content>
-  <ion-item style="cursor: pointer;margin-top:100px;" (click)="onpickupClick()">
-    <ion-icon slot="start" name="locate"></ion-icon>
-    <ion-label position="stacked">Pickup Location</ion-label>
-    <ion-textarea  style="margin-top:20px;" >{{pickupLocation}}</ion-textarea>
-  </ion-item>
+  <div class="ion-padding">
+
+    <ion-button (click)="getCurrentCoordinates()" expand="block">
+      Get Location
+    </ion-button>
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Location Coordinates</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>
+          Latitue
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{latitude}}</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          Longitude
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{longitude}}</ion-badge>
+      </ion-item>
+    </ion-list>
+  </div>
+  <section>
+    <ion-item style="cursor: pointer;margin-top:100px;" (click)="onpickupClick()">
+      <ion-icon slot="start" name="locate"></ion-icon>
+      <ion-label position="stacked">Pickup Location</ion-label>
+      <ion-textarea  style="margin-top:20px;" >{{pickupLocation}}</ion-textarea>
+    </ion-item>
+  </section>
+  <section>
+    <ion-button expand="block" routerLink='/nfc-reader'>nfc-Reeader</ion-button>
+  </section>
+  <section>
+    <ion-button expand="block" routerLink='/car-list'>List of Cars</ion-button>
+  </section>
+  <section>
+    <ion-button expand="block" routerLink='/sensor-details'>Sensor Details</ion-button>
+  </section>
+  <section>
+    <ion-button expand="block" routerLink='/settings'>Profile</ion-button>
+  </section>
+
+
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="tab1" routerLink='/nfc-reader'>
+        <ion-icon name="triangle"></ion-icon>
+        <ion-label>Tab 1</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="tab2" routerLink='/home'>
+        <ion-icon name="ellipse" ></ion-icon>
+        <ion-label>Tab 2</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="sensor-details" routerLink='/sensor-details'>
+        <ion-icon name="camera"></ion-icon>
+        <ion-label>Tab 3</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="car-list" routerLink='/car-list'>
+        <ion-icon name="camera"></ion-icon>
+        <ion-label>Tab 3</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="map" routerLink='/map'>
+        <ion-icon name="camera"></ion-icon>
+        <ion-label>Tab 3</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="settings" routerLink='/settings'>
+        <ion-icon name="settings-outline"></ion-icon>
+        <ion-label>Settings</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+
+  </ion-tabs>
+
+
+
+
+
 </ion-content>
+
