@@ -20,9 +20,14 @@ client.on('connect', function () {
 client.on('message', (topic, message) => {
     const Dt = new Date().toISOString();
     console.log('got message from topic: ' + topic);
-    console.log('the message is: ' + message);
+    console.log('the message is: ' + message.toString().split(' ')[0]);
     console.log('the date is: ' + Dt);
-    console.log('licensePlate' + message.toString().split(' '));
+    console.log('licensePlate' + message.toString().split(' ')[1]);
+    const Suspect=message.toString().split(' ')[1];
+    
+    if(Suspect=='Suspect'){
+        console.log('ALERTE')
+    }
     mqttController.createMqtt(topic,message,Dt);
 
 })

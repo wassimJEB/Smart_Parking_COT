@@ -3,13 +3,13 @@ const MqttData=require('../models/mqttModel');
 
 exports.createMqtt=async(topic,message,dateTime)=> {
     //-------Creation --------
-
+  let l =message.toString().split(' ')[1];
   let data={
     topic:topic,
-    payload:message,
+    payload:l[0]
     datetime:dateTime,
-    licensePlate:message,
-    Suspect:message
+    licensePlate:l[1],
+    Suspect:l[2]
   }
   try{
     const saved = await MqttData.createmqtt(data)
