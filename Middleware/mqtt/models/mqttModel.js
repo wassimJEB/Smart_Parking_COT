@@ -5,6 +5,7 @@ const mqttSchema = new Schema({
   topic: String,
   payload: String,
   licensePlate:String,
+  Suspect:String
 
 });
 

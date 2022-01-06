@@ -45,20 +45,6 @@ app.use('/',authRoute);
 
 
 
-//require('../identity/models/identity.schema');
-//require('../identity/controllers/iam.provider');
-/*
-const SecurityRouter = require('../security/routes.config');
-const IdentityRouter = require('../identity/routes.config');
-const indexRouter  = require('../welcome/routes.config');
-
-//bind routes to the express application
-SecurityRouter.routesConfig(app);
-IdentityRouter.routesConfig(app);
-indexRouter.routesConfig(app);
-
-*/
-
 module.exports = app;
 
 

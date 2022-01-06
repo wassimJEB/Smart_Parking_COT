@@ -42,11 +42,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/map/map.module').then( m => m.MapPageModule),
     canActivate: [AuthGuard]
   },
-  {
-    path: 'tes',
-    loadChildren: () => import('./pages/tes/tes.module').then( m => m.TesPageModule),
-    canActivate: [AuthGuard]
-  },
+
   {
     path: 'sensor-details',
     loadChildren: () => import('./pages/sensor-details/sensor-details.module').then( m => m.SensorDetailsPageModule),

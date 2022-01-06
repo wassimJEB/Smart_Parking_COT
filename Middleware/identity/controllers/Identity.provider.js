@@ -16,7 +16,7 @@ const { v4: uuidv4 } = require('uuid');
 exports.createUser=async(req,res)=> {
     //input : forename,surname,username,email,passeword,role
     //route : '/register'
-    //output : created or not
+    //output : SingID
 
         //ba3d test mel front
         const requete=JSON.parse(Object.keys(req.body)[0]);

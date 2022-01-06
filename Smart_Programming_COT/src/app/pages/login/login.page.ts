@@ -61,7 +61,6 @@ export class LoginPage implements OnInit {
           if (res.authorizationCode) {
             this.authorizationCode = res.authorizationCode
             console.log('wsolna')
-
             this.authService.postSignIn(this.authorizationCode, this.codeVerifier, this.postData.username).subscribe(
               (res: any) => {
                 if (res.token) {
