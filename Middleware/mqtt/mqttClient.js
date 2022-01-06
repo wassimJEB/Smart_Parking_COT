@@ -22,7 +22,7 @@ client.on('message', (topic, message) => {
     console.log('got message from topic: ' + topic);
     console.log('the message is: ' + message.toString().split(' ')[0]);
     console.log('the date is: ' + Dt);
-    console.log('licensePlate' + message.toString().split(' ')[1]);
+    console.log('licensePlate :' + message.toString().split(' ')[1]);
     const Suspect=message.toString().split(' ')[1];
 
     if(Suspect=='Suspect'){
