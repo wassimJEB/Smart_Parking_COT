@@ -65,9 +65,8 @@ export class LoginPage implements OnInit {
             this.authService.postSignIn(this.authorizationCode, this.codeVerifier, this.postData.username).subscribe(
               (res: any) => {
                 if (res.token) {
-                  // Storing the User data.
-                  //this.storageService.store(AuthConstants.AUTH, res.token);
-                  console.log('Jawna behy')
+                  this.authService.saveTokenData(res.token);
+                  console.log(res.token);
                   this.router.navigate(['/home']);
                 }
               },

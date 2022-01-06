@@ -3,15 +3,13 @@ const HttpStatus = require('http-status-codes');
 const bcrypt = require('bcrypt');
 const User = require('../models/userModel')
 const argon2 = require('argon2');
-
-//const validityTime = require('../config.js')().validityTime;
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto')
 
 const randomBytes = require('randombytes');
 const mongoose = require('mongoose'),
     Schema = mongoose.Schema
-const { uuid } = require('uuidv4');
+const { v4: uuidv4 } = require('uuid');
 
 //---------Register------------
 
@@ -70,8 +68,8 @@ exports.PreSignIn = async(req, res , next) => {
     const requete=JSON.parse(Object.keys(req.body)[0]);
     clientId = requete.clientId;
     codeChallenge = requete.codeChallenge;
-    SignInId = clientId + "#" + uuidv4().toString();
-    challenges[codechallenge] = SignInId;
+    SignInId = clientId + "#" + v4().toString();
+    challenges[codeChallenge] = SignInId;
 
     data = {
         SignInId:SignInId,
@@ -97,11 +95,11 @@ exports.signIn = async (req, res , next) => {
         //const requete = req.body
         //----------------- Comparaison SignINID from back and front
 
-        /*console.log('login')
-       console.log(this.postData)
-        if(SignInId != requete.SignInId){
+        console.log('login')
+       console.log(requete.SignInId)
+        if(!requete.SignInId){
            return res.status(401).send({errors : ['Unauthorized']});
-       }*/
+       }
 
 
         User.findByUsername(requete.username).then(async (user)=> {
@@ -127,7 +125,10 @@ exports.signIn = async (req, res , next) => {
     }
 };
 exports.PostSignIn = async(req, res , next) => {
+
+
     let requete=JSON.parse(Object.keys(req.body)[0]);
+    //let requete=JSON.parse(Object.keys(req.header)[0]);
 
     if(requete.authorizationCode != this.authorizationCode){
         //console.log('mch mrigl')
@@ -137,13 +138,7 @@ exports.PostSignIn = async(req, res , next) => {
     let hash = crypto.createHash('sha256')
         .update(requete.codeVerifier)
         .digest('hex');
-    //----------------- Comparaison hash and codeChallenge
-    /*
-    if(hash !== requete.codeVerifier){
-        console.log(this.codeChallenge);
 
-        return res.status(401).send({errors : ['Unauthorized']});
-    }*/
 
     user = User.findByUsername(requete.username).then(async (user)=> {
         var now = Math.floor(Date.now()/1000);
@@ -159,8 +154,8 @@ exports.PostSignIn = async(req, res , next) => {
             exp : now + 1000
         };
         //Create JWT Token and return it
-        console.log('Create JWT Token and return it')
-        console.log(requete)
+        //console.log('Create JWT Token and return it')
+
         jwt.sign(requete, require('crypto').randomBytes(64).toString('hex'), (err, token) => {
             res.json({
                 token
@@ -179,9 +174,5 @@ exports.PostSignIn = async(req, res , next) => {
     //generate Access Token & Refresh Token
 
 }
-exports.RefreshSignIn = async(req, res , next) =>{
-    //route : /oauth/token/refresh
-    //input : currentRefreshToken , currentAccessToken
-    //output : newRefreshToken , newAccessToken
-}
+
 

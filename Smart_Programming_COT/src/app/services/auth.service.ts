@@ -27,10 +27,10 @@ const HTTP_OPTIONS = {
 })
 export class AuthService {
   redirectUrl='';
-  //private urlReg ='http://localhost:8084/register';
+  userToken='';
+
   constructor(
     private httpService: HttpService,
-    //private storageService: StorageService,
     private http: HttpClient,
     private router: Router,
     private tokenService: TokenService
@@ -47,9 +47,7 @@ export class AuthService {
       'Something bad happened; please try again later.');
   }
 
-  private static log(message: string): any {
-    console.log(message);
-  }
+
 
 
 
@@ -70,12 +68,16 @@ export class AuthService {
     };
     return this.httpService.postMeth('users/authorize', data);
   }
+  saveTokenData(token:any){
+    this.userToken=token
+  }
   postSignIn(authorizationCode : any, codeVerifier : any, username : any): Observable<any> {
     let data = {
       authorizationCode: authorizationCode,
       codeVerifier: codeVerifier,
       username : username
     };
+
 
     return this.httpService.postMeth('users/oauth/token', data);
   }
@@ -103,23 +105,7 @@ export class AuthService {
       );
   }
 
-  /*  login(loginData: any): Observable<any> {
-    this.tokenService.removeToken();
-    this.tokenService.removeRefreshToken();
-    const body = new HttpParams()
-      .set('username', loginData.username)
-      .set('password', loginData.password)
-      .set('grant_type', 'password');
 
-    return this.http.post<any>(API_URL + 'login', body, HTTP_OPTIONS)
-      .pipe(
-        tap(res => {
-          this.tokenService.saveToken(res.access_token);
-          this.tokenService.saveRefreshToken(res.refresh_token);
-        }),
-        catchError(AuthService.handleError)
-      );
-  }*/
 
   secured(): Observable<any> {
     return this.http.get<any>(API_URL + 'secret')

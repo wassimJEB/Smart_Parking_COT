@@ -3,9 +3,11 @@
     <ion-title>nfcReader</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-button expand="block" share="round" color="success" (click)="NfcReader()" >NFC</ion-button>
+<ion-badge color="danger" slot="end">{{info}}</ion-badge>
 
 <ion-content>
-  <ion-button expand="block" share="round" color="success" (click)="test2()" >NFC</ion-button>
+
   <ion-tabs>
 
     <ion-tab-bar slot="bottom">

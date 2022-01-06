@@ -1,30 +1,39 @@
 import { Component, OnInit } from '@angular/core';
-//import { NFC, Ndef } from '@awesome-cordova-plugins/nfc/ngx';
-//import { NFC, Ndef } from "@ionic-native/nfc/ngx";
+import { Plugins ,Capacitor} from '@capacitor/core';
+const { NFC } = Plugins;
 @Component({
   selector: 'app-nfc-reader',
   templateUrl: './nfc-reader.page.html',
   styleUrls: ['./nfc-reader.page.scss'],
 })
 export class NfcReaderPage implements OnInit {
+   info:any;
 
 
-  constructor(
-    //private nfc: NFC, private ndef: Ndef
-    ) { }
+  constructor() { }
 
   ngOnInit() {
   }
-  test2(){
-    /*this.nfc.addNdefListener(() => {
-      console.log('successfully attached ndef listener');
-    }, (err) => {
-      console.log('error attaching ndef listener', err);
-    }).subscribe(() => {
-      console.log("works");
-      let message = [this.ndef.textRecord("hello, world")];
-      this.nfc.share(message);
-    }, err => console.log(err));*/
+  //----------- Only for Android----------
+  async NfcReader(info) {
+
+    console.log('run nfc')
+      if (Capacitor.isPluginAvailable('NFC')) {
+        const status = NFC.getStatus();
+        console.log('NFC is enabled', status);
+
+
+
+        if (status !== 'enabled') {
+          NFC.showSettings();
+        }else{
+          NFC.getTags().then(data=>{
+            console.log(data)
+            info = data;
+          });
+
+        }
+      }
 
   }
 

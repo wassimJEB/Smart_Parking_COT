@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e1c3abe-27dc-4144-baf1-c98b65acc598" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/main/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/config/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/identity/controllers/Identity.provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/identity/controllers/Identity.provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/main/connection.db.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/main/connection.db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/mqtt/mqttClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/mqtt/mqttClient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/main/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/nfc-reader/nfc-reader.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/nfc-reader/nfc-reader.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/home/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/home/home.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/login/login.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/login/login.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +80,8 @@
       <workItem from="1641045816565" duration="2463000" />
       <workItem from="1641122232125" duration="1675000" />
       <workItem from="1641303129973" duration="3279000" />
-      <workItem from="1641377546908" duration="8528000" />
+      <workItem from="1641377546908" duration="18714000" />
+      <workItem from="1641460747677" duration="3851000" />
     </task>
     <servers />
   </component>

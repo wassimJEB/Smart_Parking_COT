@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
+
 
 const routes: Routes = [
   {
@@ -20,32 +22,40 @@ const routes: Routes = [
   },
   {
     path: 'settings',
-    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule),
+    canActivate: [AuthGuard]
+
 
   },
   {
     path: 'nfc-reader',
-    loadChildren: () => import('./nfc-reader/nfc-reader.module').then( m => m.NfcReaderPageModule)
+    loadChildren: () => import('./nfc-reader/nfc-reader.module').then( m => m.NfcReaderPageModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'map',
-    loadChildren: () => import('./pages/map/map.module').then( m => m.MapPageModule)
+    loadChildren: () => import('./pages/map/map.module').then( m => m.MapPageModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'tes',
-    loadChildren: () => import('./pages/tes/tes.module').then( m => m.TesPageModule)
+    loadChildren: () => import('./pages/tes/tes.module').then( m => m.TesPageModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'sensor-details',
-    loadChildren: () => import('./pages/sensor-details/sensor-details.module').then( m => m.SensorDetailsPageModule)
+    loadChildren: () => import('./pages/sensor-details/sensor-details.module').then( m => m.SensorDetailsPageModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'car-list',
-    loadChildren: () => import('./pages/car-list/car-list.module').then( m => m.CarListPageModule)
+    loadChildren: () => import('./pages/car-list/car-list.module').then( m => m.CarListPageModule),
+    canActivate: [AuthGuard]
   }
 
 ];

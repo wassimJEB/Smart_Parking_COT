@@ -28,15 +28,18 @@ export class RegisterPage implements OnInit {
      console.log(this.postData.role);
 
     const Result = document.getElementById('res');
-     this.authService.register(this.postData).subscribe(async res=> {
-         console.log(res.postData);
-         await this.toastService.presentToast('Account created successfully!')
+     this.authService.register(this.postData).subscribe(res=> {
+
          this.router.navigate(['/login']);
+         this.toastService.presentToast('Account created successfully!').then(
+
+         )
 
 
-         }, async err=>{
+
+         }, err=>{
        console.log(err);
-       await this.toastService.presentToast('There was a problem while creating the account!')
+       this.toastService.presentToast('There was a problem while creating the account!')
 
        }
      );
