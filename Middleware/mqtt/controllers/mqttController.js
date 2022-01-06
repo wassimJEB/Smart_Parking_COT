@@ -22,7 +22,8 @@ exports.createMqtt=async(topic,message,dateTime)=> {
 
 }
 exports.listPlate=async (req,res)=>{
-  await MqttData.find()
+  console.log('list')
+  await MqttData.find({})
       .then(MqttData => res.status(200).json(MqttData))
       .catch(error => res.status(400).json({ error }));
 

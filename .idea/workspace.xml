@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e1c3abe-27dc-4144-baf1-c98b65acc598" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleware/identity/authRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/identity/authRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Middleware/mqtt/controllers/mqttController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/mqtt/controllers/mqttController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/car-list/car-list.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/car-list/car-list.page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,7 @@
       <workItem from="1641122232125" duration="1675000" />
       <workItem from="1641303129973" duration="3279000" />
       <workItem from="1641377546908" duration="18714000" />
-      <workItem from="1641460747677" duration="24116000" />
+      <workItem from="1641460747677" duration="24371000" />
     </task>
     <servers />
   </component>
