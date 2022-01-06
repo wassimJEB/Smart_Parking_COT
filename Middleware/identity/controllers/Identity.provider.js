@@ -149,7 +149,7 @@ exports.PostSignIn = async(req, res , next) => {
             name : user[0].forename + ' ' + user[0].surname,
             userId : user[0]._id,
             roles : user[0].permissionLevel,
-            jti : v4,
+            jti : uuidv4(),
             iat : now,
             exp : now + 1000
         };
