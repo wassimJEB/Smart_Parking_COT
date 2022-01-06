@@ -22,4 +22,5 @@ exports.listPlate=(req,res)=>{
   MqttData.find()
       .then(things => res.status(200).json(MqttData))
       .catch(error => res.status(400).json({ error }));
+  console.log(MqttData);
 }
