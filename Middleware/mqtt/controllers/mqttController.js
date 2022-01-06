@@ -7,7 +7,7 @@ exports.createMqtt=async(topic,message,dateTime)=> {
   let data={
     topic:topic,
     payload:l[0],
-    datetime:dateTime
+    datetime:dateTime,
     licensePlate:l[1],
     Suspect:l[2]
   }
