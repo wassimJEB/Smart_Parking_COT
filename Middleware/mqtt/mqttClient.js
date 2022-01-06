@@ -24,7 +24,7 @@ client.on('message', (topic, message) => {
     console.log('the date is: ' + Dt);
     console.log('licensePlate' + message.toString().split(' ')[1]);
     const Suspect=message.toString().split(' ')[1];
-    
+
     if(Suspect=='Suspect'){
         console.log('ALERTE')
     }
