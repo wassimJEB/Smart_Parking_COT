@@ -4,8 +4,8 @@ const MqttData=require('../models/mqttModel');
 exports.createMqtt=async(topic,message,dateTime)=> {
     //-------Creation --------
   var l=[];
-  l=message.split('/');
-  console.log(l)
+  console.log(message.split(" "));
+  
   let data={
     topic:topic,
     payload:l[0],
