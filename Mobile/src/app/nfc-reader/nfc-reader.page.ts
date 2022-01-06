@@ -15,7 +15,8 @@ export class NfcReaderPage implements OnInit {
   ngOnInit() {
   }
   //----------- Only for Android----------
-  async NfcReader(info) {
+
+  NfcReader() {
 
     console.log('run nfc')
       if (Capacitor.isPluginAvailable('NFC')) {
@@ -29,7 +30,7 @@ export class NfcReaderPage implements OnInit {
         }else{
           NFC.getTags().then(data=>{
             console.log(data)
-            info = data;
+            this.info = data;
           });
 
         }
