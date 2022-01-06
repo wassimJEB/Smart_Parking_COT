@@ -13,7 +13,7 @@ router.post('/users/authorize',identityProvider.PreSignIn);
 
 router.post('/users/oauth/token',identityProvider.PostSignIn);
 
-router.post('/oauth/token/refresh',identityProvider.RefreshSignIn);
+//router.post('/oauth/token/refresh',identityProvider.RefreshSignIn);
 
 
 
