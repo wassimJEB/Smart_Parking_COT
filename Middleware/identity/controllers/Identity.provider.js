@@ -68,7 +68,7 @@ exports.PreSignIn = async(req, res , next) => {
     const requete=JSON.parse(Object.keys(req.body)[0]);
     clientId = requete.clientId;
     codeChallenge = requete.codeChallenge;
-    SignInId = clientId + "#" + v4().toString();
+    SignInId = clientId + "#" + uuidv4().toString();
     challenges[codeChallenge] = SignInId;
 
     data = {
