@@ -1,9 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>carList</ion-title>
-  </ion-toolbar>
-</ion-header>
+<table class="table" *ngFor=let data of Table>
+  <thead>
+  <tr>
+    <th>Message</th>
+    <th>Datetime</th>
+    <th>License Plate</th>
+    <th>Suspect</th>
 
-<ion-content>
-
-</ion-content>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>{{data.message}}</td>
+    <td>{{data.datetime}}</td>
+    <td>{{data.license}}</td>
+    <td>{{data.suspect}}</td>
+  </tr>
+  </tbody>
+</table>

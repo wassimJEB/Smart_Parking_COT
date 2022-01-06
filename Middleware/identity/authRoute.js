@@ -15,7 +15,7 @@ router.post('/users/oauth/token',identityProvider.PostSignIn);
 
 //router.post('/oauth/token/refresh',identityProvider.RefreshSignIn);
 
-//router.get('/car-list', mqttController.listPlate);
+router.get('/car-list', mqttController.listPlate);
 
 
 
