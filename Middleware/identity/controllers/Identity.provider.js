@@ -99,9 +99,10 @@ exports.signIn = async (req, res , next) => {
 
         console.log('login')
        console.log(requete.SignInId)
-        /*if(!requete.SignInId){
+        if(!requete.SignInId){
+            console.log('T3ada')
            return res.status(401).send({errors : ['Unauthorized']});
-       }*/
+       }
 
 
         User.findByUsername(requete.username).then(async (user)=> {
