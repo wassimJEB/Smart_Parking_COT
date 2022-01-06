@@ -19,11 +19,10 @@ client.on('connect', function () {
 
 client.on('message', (topic, message) => {
     const Dt = new Date().toISOString();
-    mqttController.createMqtt(topic,message,Dt);
-
-
-
     console.log('got message from topic: ' + topic);
     console.log('the message is: ' + message);
     console.log('the date is: ' + Dt);
+    console.log('licensePlate' + message.split(' ')[1]);
+    mqttController.createMqtt(topic,message,Dt);
+
 })
