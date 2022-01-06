@@ -1,3 +1,63 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <ion-split-pane contentId="main-content" >
+    <ion-menu contentId="main-content" type="overlay" >
+      <ion-content>
+        <ion-list id="inbox-list">
+
+          <ion-note>Menu</ion-note>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item  routerDirection="root" [routerLink]="[loginPage.url]"
+                      lines="none" detail="false" routerLinkActive="selected">
+
+              <ion-label>Login</ion-label>
+            </ion-item>
+            <ion-item  routerDirection="root" [routerLink]="[registerPage.url]"
+                       lines="none" detail="false" routerLinkActive="selected">
+
+              <ion-label>Register</ion-label>
+            </ion-item>
+            <ion-item  routerDirection="root" [routerLink]="[home.url]"
+                       lines="none" detail="false" routerLinkActive="selected">
+
+              <ion-label>Home</ion-label>
+            </ion-item>
+            <ion-item  routerDirection="root" [routerLink]="[nfcReader.url]"
+                       lines="none" detail="false" routerLinkActive="selected">
+
+              <ion-label>Nfc Reader</ion-label>
+            </ion-item>
+
+
+            <ion-item  routerDirection="root" [routerLink]="[map.url]"
+                       lines="none" detail="false" routerLinkActive="selected">
+
+              <ion-label>Map</ion-label>
+            </ion-item>
+              <ion-item  routerDirection="root" [routerLink]="[sensorDetail.url]"
+                         lines="none" detail="false" routerLinkActive="selected">
+
+                <ion-label>Sensor Details</ion-label>
+              </ion-item>
+              <ion-item  routerDirection="root" [routerLink]="[carList.url]"
+                         lines="none" detail="false" routerLinkActive="selected">
+
+                <ion-label>Car List</ion-label>
+              </ion-item>
+
+            <ion-item  routerDirection="root" [routerLink]="[registerPage.url]"
+                       lines="none" detail="false" routerLinkActive="selected">
+
+              <ion-label>Settings</ion-label>
+            </ion-item>
+
+
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+
+
 </ion-app>

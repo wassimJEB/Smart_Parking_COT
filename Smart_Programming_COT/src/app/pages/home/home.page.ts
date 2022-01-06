@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import * as Leaflet from 'leaflet';
 import { antPath } from 'leaflet-ant-path';
-
+import {GeolocService} from '../../services/geoloc.service';
 import { Geolocation } from '@capacitor/geolocation';
 @Component({
   selector: 'app-home',
@@ -14,7 +14,8 @@ export class HomePage implements OnInit {
   pickupLocation: string;
   latitude: any = 0; //latitude
   longitude: any = 0; //longitude
-  constructor(private router:Router) {}
+
+  constructor(private router:Router,private geloc:GeolocService) {}
 
   ngOnInit() {
   }
@@ -25,15 +26,15 @@ export class HomePage implements OnInit {
   };
   // use geolocation to get user's device coordinates
 
+
   getCC() {
-    console.log('run');
-    Geolocation.getCurrentPosition().then((resp) => {
-      this.latitude = resp.coords.latitude;
-      this.longitude = resp.coords.longitude;
-      console.log(resp);
-    }).catch((error) => {
-      console.log('Error getting location', error);
-    });
+    const L=this.geloc.getCoord();
+    this.latitude=L[0];
+    this.longitude=L[1];
+    console.log(L);
+
+    console.log('Mrigla')
+
   }
 
 

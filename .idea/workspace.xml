@@ -4,6 +4,12 @@
     <list default="true" id="7e1c3abe-27dc-4144-baf1-c98b65acc598" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Middleware/identity/controllers/Identity.provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/identity/controllers/Identity.provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/nfc-reader/nfc-reader.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/nfc-reader/nfc-reader.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/home/home.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/home/home.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/map/map.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/map/map.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,22 +88,11 @@
       <workItem from="1641122232125" duration="1675000" />
       <workItem from="1641303129973" duration="3279000" />
       <workItem from="1641377546908" duration="18714000" />
-      <workItem from="1641460747677" duration="5833000" />
+      <workItem from="1641460747677" duration="12317000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/map/map.page.ts</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

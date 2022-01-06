@@ -69,8 +69,7 @@ exports.PreSignIn = async(req, res , next) => {
     clientId = requete.clientId;
     codeChallenge = requete.codeChallenge;
     SignInId = clientId + "#" + uuidv4().toString();
-    console.log(SignInId);
-    console.log('sign')
+
     challenges[codeChallenge] = SignInId;
 
     data = {
@@ -100,29 +99,32 @@ exports.signIn = async (req, res , next) => {
         console.log('login')
        console.log(requete.SignInId)
         if(!requete.SignInId){
-            console.log('T3ada')
+
            return res.status(401).send({errors : ['Unauthorized']});
-       }
+       }else {
+            User.findByUsername(requete.username).then(async (user)=> {
 
-
-        User.findByUsername(requete.username).then(async (user)=> {
-
-            if(!user[0]){
-                //Les coordonnées n'existent pas
-                return res.status(400).send({errors : ['Invalid Credentials ']});
-            }else{
-                if(await argon2.verify(user[0].password,requete.password)){
-                    this.authorizationCode = randomBytes(16).toString('hex');
-                    console.log(this.authorizationCode)
-
-                    return res.status(200).send({authorizationCode : this.authorizationCode});
-
+                if(!user[0]){
+                    //Les coordonnées n'existent pas
+                    return res.status(400).send({errors : ['Invalid Credentials ']});
                 }else{
-                    //Password error
-                    return res.status(400).send({errors : ['Invalid Credentials']});
+                    if(await argon2.verify(user[0].password,requete.password)){
+                        this.authorizationCode = randomBytes(16).toString('hex');
+                        console.log(this.authorizationCode)
+
+                        return res.status(200).send({authorizationCode : this.authorizationCode});
+
+                    }else{
+                        //Password error
+                        return res.status(400).send({errors : ['Invalid Credentials']});
+                    }
                 }
-            }
-        });
+            });
+
+        }
+
+
+
     }catch(err){
         return next(err);
     }
