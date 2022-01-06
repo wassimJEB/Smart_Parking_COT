@@ -69,6 +69,8 @@ exports.PreSignIn = async(req, res , next) => {
     clientId = requete.clientId;
     codeChallenge = requete.codeChallenge;
     SignInId = clientId + "#" + uuidv4().toString();
+    console.log(SignInId);
+    console.log('sign')
     challenges[codeChallenge] = SignInId;
 
     data = {
@@ -77,7 +79,7 @@ exports.PreSignIn = async(req, res , next) => {
         codeChallenge:codeChallenge
     }
     //console.log(data)
-    privateData.push(SignInId);
+
     return res.status(200).send(data);
 }
 
