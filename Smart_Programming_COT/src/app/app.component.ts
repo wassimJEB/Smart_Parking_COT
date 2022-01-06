@@ -14,7 +14,7 @@ export class AppComponent {
   public map = { title: 'Map', url: '/map', icon: 'person-add' };
   public sensorDetail = { title: 'sensor', url: '/sensor-details', icon: 'person-add' };
   public carList = { title: 'Car List', url: '/car-list', icon: 'person-add' };
-  public logoutPage = { title: 'Logout', url: '/logout', icon: 'log-out' };
+  public settings = { title: 'settings', url: '/settings', icon: 'log-out' };
   constructor() {
     console.log(environment.type,'  Mode ')
   }

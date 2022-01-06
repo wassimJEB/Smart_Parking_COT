@@ -12,6 +12,7 @@ let bodyParser  = require('body-parser');
 let indexRouter = require('../routes');
 let usersRouter = require('../routes/users');
 let authRoute = require('../identity/authRoute');
+let mqttRoute=require('../mqtt/mqttRoute');
 //let conf=require('./config/config')
 
 let app = express();
@@ -39,7 +40,8 @@ require('./connection.db')();
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/',authRoute)
+app.use('/',authRoute);
+
 
 
 
