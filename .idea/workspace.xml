@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e1c3abe-27dc-4144-baf1-c98b65acc598" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Middleware/mqtt/controllers/mqttController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middleware/mqtt/controllers/mqttController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/car-list/car-list.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/car-list/car-list.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/car-list/car-list.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/car-list/car-list.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/car-list/car-list.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/car-list/car-list.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Smart_Programming_COT/src/app/pages/register/register.page.ts" root0="FORCE_HIGHLIGHTING" />
@@ -81,7 +92,7 @@
       <workItem from="1641122232125" duration="1675000" />
       <workItem from="1641303129973" duration="3279000" />
       <workItem from="1641377546908" duration="18714000" />
-      <workItem from="1641460747677" duration="24371000" />
+      <workItem from="1641460747677" duration="30744000" />
     </task>
     <servers />
   </component>

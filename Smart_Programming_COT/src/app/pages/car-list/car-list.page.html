@@ -1,19 +1,65 @@
-<table class="table" *ngFor=let data of Table>
-  <thead>
-  <tr>
-    <th>Message</th>
-    <th>Datetime</th>
-    <th>License Plate</th>
-    <th>Suspect</th>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CarList</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-button expand="block" share="round" color="success" (click)="Afficher()" >Afficher</ion-button>
+<ion-badge color="danger" slot="end"></ion-badge>
 
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>{{data.message}}</td>
-    <td>{{data.datetime}}</td>
-    <td>{{data.license}}</td>
-    <td>{{data.suspect}}</td>
-  </tr>
-  </tbody>
-</table>
+
+
+    <ion-content>
+
+
+      <ion-grid class="ion-text-center">
+
+        <ion-row class="ion-margin">
+          <ion-col>
+            <ion-title>
+              <ion-text color="default">
+                Data From Mqtt
+              </ion-text>
+            </ion-title>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="header-row">
+          <ion-col>
+            <ion-text>DateTime</ion-text>
+          </ion-col>
+
+          <ion-col>
+            <ion-text>License Plate</ion-text>
+          </ion-col>
+
+          <ion-col>
+            <ion-text>Suspect</ion-text>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row *ngFor="let tab of getData">
+          <ion-col>
+            <ion-text>
+              {{tab.datetime}}
+            </ion-text>
+          </ion-col>
+
+          <ion-col>
+            <ion-text>
+              {{tab.licensePlate}}
+            </ion-text>
+          </ion-col>
+
+          <ion-col>
+            <ion-text>
+              {{tab.Suspect}}
+            </ion-text>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </ion-content>
+
+
+
