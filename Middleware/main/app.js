@@ -16,6 +16,7 @@ let authRoute = require('../identity/authRoute');
 //let conf=require('./config/config')
 
 let app = express();
+app.use(cors());
 app.use(express.static(__dirname+'/web'));//set the static path
 app.set('view engine', 'pug');
 app.get(['/', '/login', '/register', '/map', '/car-list', '/home'], (req, res) => {
@@ -30,7 +31,7 @@ app.set('view engine', 'ejs');*/
 app.use(helmet())
 app.use(express.json({limit:'5mb',extended:'true'}));
 
-app.use(cors());
+
 app.use(logger('dev'));
 app.use(express.urlencoded({limit:'5mb'}));
 app.use(cookieParser());
