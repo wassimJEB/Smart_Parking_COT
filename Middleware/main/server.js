@@ -12,13 +12,13 @@ const mqtt = require('../mqtt/mqttClient');
 //--------Https----------
 console.log('ahya ml config'+config['cert-file']);
 const options = {
-  key: fs.readFileSync("/etc/letsencrypt/live/wassimjeb.me/privkey.pem"),
-  cert: fs.readFileSync("/etc/letsencrypt/live/wassimjeb.me/fullchain.pem"),
-  dhparam: fs.readFileSync("/etc/letsencrypt/live/wassimjeb.me/dh-strong.pem")
+  key: fs.readFileSync(config['key-file']),
+  cert: fs.readFileSync(config['cert-file']),
+  dhparam: fs.readFileSync(config['dh-strongfile'])
 };
 
 
-https.createServer(options,app).listen(443, () => {
+https.createServer(options,app).listen(config['port'] ,() => {
   console.log('HTTPS Server running on port 443');
 });
 
