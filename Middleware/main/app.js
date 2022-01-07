@@ -16,7 +16,7 @@ let authRoute = require('../identity/authRoute');
 //let conf=require('./config/config')
 
 let app = express();
-app.use(express.static('../')//set the static path
+app.use(express.static(__dirname+'/web')//set the static path
 app.set('view engine', 'pug');
 // view engine setup
 /*app.set('views', path.join(__dirname, 'views'));
