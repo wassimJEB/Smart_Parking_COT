@@ -5,12 +5,12 @@ const https = require('https');
 const http = require('http');
 const fs =require('fs');
 
-
+const config = require('./env.config')
 const app = require('./app.js');
 const mqtt = require('../mqtt/mqttClient');
 
 //--------Https----------
-
+console.log('ahya ml config'+config['cert-file']);
 const options = {
   key: fs.readFileSync("/etc/letsencrypt/live/wassimjeb.me/privkey.pem"),
   cert: fs.readFileSync("/etc/letsencrypt/live/wassimjeb.me/fullchain.pem"),
