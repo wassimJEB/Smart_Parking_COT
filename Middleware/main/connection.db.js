@@ -1,9 +1,10 @@
-const mongoose = require('mongoose');
 
+const mongoose = require('mongoose');
+const config = require('./env.config')
 
 module.exports = () => {
     //create a connection pool to the main database, you can add connection to other databases
-    mongoose.connect("mongodb+srv://wassjb:abcd1234$@projetcot.dbmtd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true},()=>{
+    mongoose.connect(config['main_db_url'], {useNewUrlParser: true, useUnifiedTopology: true},()=>{
         console.log('Connected to DB ');
         });
     const mainPool = mongoose.connection;

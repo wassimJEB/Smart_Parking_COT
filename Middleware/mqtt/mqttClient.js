@@ -1,10 +1,10 @@
 const mqtt = require('mqtt')
 const mqttController = require('./controllers/mqttController');
+const config = require('../main/env.config');
 
-
-const client = mqtt.connect('mqtt://mqtt.wassimjeb.me', {
-    username: 'mqttCot',
-    password: 'abcd1234$',
+const client = mqtt.connect(config['mqtt_hos'] ,{
+    username: config['mqtt_user'],
+    password: config['mqtt_password'],
     port: 1883
 })
 
