@@ -19,7 +19,7 @@ let app = express();
 app.use(cors());
 app.use(express.static(__dirname+'/web'));//set the static path
 app.set('view engine', 'pug');
-app.get(['/', '/login', '/register', '/map', '/car-list', '/home'], (req, res) => {
+app.get(['/', '/login', '/register', '/map', '/home'], (req, res) => {
     res.sendFile(__dirname + '/web/index.html');
 });
 // view engine setup
