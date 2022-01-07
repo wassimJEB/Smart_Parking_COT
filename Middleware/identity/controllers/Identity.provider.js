@@ -29,7 +29,15 @@ exports.createUser=async(req,res)=> {
         const hashedPassword = await bcrypt.hash(requete.password,10)*/
 
         //-----USE ARGON2-------
+
         try {
+            let existsWithEmailOrUsername = await User.find().or([{ email: { $eq: requete.email } }, { username: { $eq: requete.username } }]);
+            if (existsWithEmailOrUsername.length) {
+                res.status(401).send({
+                    message: 'User with email or username already exists!'
+                });
+                return;
+            }
             requete.password = await argon2.hash(requete.password, {
                 type: argon2.argon2id,
                 memoryCost: 2 ** 16,
